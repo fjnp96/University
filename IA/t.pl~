@@ -1,0 +1,4 @@
+por_na_coluna(Tabuleiro1, Nr_coluna,Tabuleiro2):-get_coluna(Tabuleiro1,Nr_coluna,Coluna2),write(Coluna2).
+
+get_coluna([H|_],1,[H]).
+get_coluna([_|T],X,Coluna):-X1 is X-1,get_coluna(T,X1,Coluna),!.

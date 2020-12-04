@@ -1,0 +1,2 @@
+cona(N):-N1 is N+1,write(N1).
+cona(N):-N1 is N-1,write(N1).
